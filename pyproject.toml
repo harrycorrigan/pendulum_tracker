@@ -1,0 +1,29 @@
+[project]
+name = "pendulum-tracker"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Harry Corrigan",email = "corriganharry@outlook.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "opencv-python (>=4.13.0.92,<5.0.0.0)",
+    "numpy (>=2.4.4,<3.0.0)",
+    "matplotlib (>=3.10.9,<4.0.0)",
+    "scipy (>=1.17.1,<2.0.0)",
+    "pandas (>=3.0.2,<4.0.0)",
+    "tqdm (>=4.67.3,<5.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.3.0"
+black = "^26.3.1"
+
